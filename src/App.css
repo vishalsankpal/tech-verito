@@ -1,0 +1,26 @@
+:root {
+  --dark: #000;
+  --border: rgba(0, 0, 0, 0.2);
+  --white: #fff;
+  --shadow: rgba(181, 181, 181, 0.61);
+  --danger: #ee2626;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}

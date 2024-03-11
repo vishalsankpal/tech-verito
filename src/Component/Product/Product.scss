@@ -1,0 +1,86 @@
+.product-card {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  .img-title-price-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      flex: 0 0 200px;
+      width: 200px;
+      height: 150px;
+      object-fit: contain;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    & > div {
+      flex: 1;
+      h3 {
+        margin: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.2;
+        height: 50px;
+        font-size: 1.25rem;
+        white-space: normal;
+        -webkit-line-clamp: 2;
+        margin-bottom: 1.25rem;
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+      p {
+        margin: 0;
+        font-size: 1rem;
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+  hr {
+    color: var(--border);
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .desc-btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    p {
+      flex: 1;
+      margin: 0;
+      padding-right: 15px;
+      font-size: 1rem;
+      font-weight: 500;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.4;
+      height: 46px;
+      white-space: normal;
+      -webkit-line-clamp: 2;
+      @media only screen and (max-width: 768px) {
+        padding-right: 0;
+        margin-bottom: 0.625rem;
+      }
+    }
+  }
+}
+.sweetPopup {
+  position: fixed;
+    top: 70px;
+    right: 0;
+    padding: 30px;
+    background: green;
+}
